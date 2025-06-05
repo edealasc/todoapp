@@ -24,7 +24,7 @@ To set this project up:
    ```
 3. Run the server:
    ```sh
-   python manage.py migrate
+   python manage.py runserver
    ```
 ## API Endpoints
 
@@ -53,9 +53,9 @@ I've implemented filtering of tasks as pending and completed, but since the requ
 
 CORS is enabled right now to test out the project.
 
-#Frontend
-
-To setup the nextjs frontend:
+# Frontend
+Although optional, running the frontend displays the project more intuitively, and you can do so by setting it up.
+To do so,
 1. Go to the frontend folder.
 2. Install the requirements:
      ```sh
