@@ -47,7 +47,7 @@ There are two view functions in this project.
 2. task_detail Can accept two methods, PUT and DELETE to either mark a task as complete or delete it.
 
 
-I've implemented filtering of tasks as pending and completed, but since the request is either way being made to the /api/task endpoint to fetch all the tasks, I thought it would be more efficent and effective to filter them out in the frontend instead.
+I've implemented filtering of tasks as pending and completed, and also classifying them as overdue, but since the request is either way being made to the /api/task endpoint to fetch all the tasks, I thought it would be more efficent and effective to filter them out in the frontend instead.
 
 ## CORS
 
