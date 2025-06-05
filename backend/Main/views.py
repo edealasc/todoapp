@@ -10,10 +10,10 @@ import datetime
 @api_view(['GET', 'POST'])
 @permission_classes([AllowAny])
 def tasks_collection(request):
-    """
-    GET /api/tasks — Return all tasks as JSON
-    POST /api/tasks — Add a new task
-    """
+    
+    # GET /api/tasks — Return all tasks as JSON
+    # POST /api/tasks — Add a new task
+
     if request.method == 'GET':
         tasks = Todo.objects.all()
         tasks_json = [
@@ -44,10 +44,10 @@ def tasks_collection(request):
 @api_view(['PUT', 'DELETE'])
 @permission_classes([AllowAny])
 def task_detail(request, id):
-    """
-    PUT /api/tasks/:id — Mark as completed
-    DELETE /api/tasks/:id — Delete a task
-    """
+    
+    # PUT /api/tasks/:id — Mark as completed
+    # DELETE /api/tasks/:id — Delete a task
+    
     try:
         task = Todo.objects.get(id=id)
     except Todo.DoesNotExist:
